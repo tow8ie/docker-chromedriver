@@ -1,5 +1,17 @@
 # Docker container for creating a ChromeDriver server
 
+Fork of https://github.com/RobCherry/docker-chromedriver that changes:
+
+- Uses Debian bullseye instead of stretch
+- Sets timezone to Berlin
+- Installs chromium (with apt) instead of chrome (by hand)
+- Installs chromium-driver (with apt) instead of chromedriver (by hand)
+- Installs supervisor with apt instead of installing it with python and pip
+- No longer installs and starts tinywm
+- No longer installs curl, unzip
+
+----- Original README -----
+
 Includes
 
 * ChromeDriver (Latest)
